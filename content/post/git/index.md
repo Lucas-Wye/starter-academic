@@ -120,5 +120,34 @@ git submodule update --init --recursive
 git clone <仓库地址> --recursive
 ```
 
+### 合并多个commit
+```
+commit THIRD_COMMIT_ID
+	add third commit
+
+commit SECOND_COMMIT_ID
+	add second_commit
+
+commit FIRST_COMMIT_ID
+	add third commit
+```
+首先有3个commit，需要将前两个commit合成一个
+```sh
+git rebase -i FIRST_COMMIT_ID
+```
+出现如下界面：
+```sh
+pick SECOND_COMMIT_ID add second_commit
+pick THIRD_COMMIT_ID add third commit
+
+...
+```
+修改成：
+```sh
+pick SECOND_COMMIT_ID add second_commit
+squash THIRD_COMMIT_ID add third commit
+```
+DONE.
+
 ## More
 [git教程](https://www.runoob.com/git/git-tutorial.html)  

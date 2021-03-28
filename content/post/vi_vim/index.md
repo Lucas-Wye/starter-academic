@@ -66,6 +66,9 @@ projects: []
 | ^ | beginning of text on current line |
 | [CTRL] F/B| move screen |
 | [CTRL] D/U | move half screen |
+| zz | 将当前行放置于屏幕中间 |
+| zt | 将当前行放置于屏幕顶端 |
+| zb | 将当前行放置于屏幕底端 |
 
 ## Inserting text
 |   |                              |
