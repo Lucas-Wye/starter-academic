@@ -51,13 +51,14 @@ projects: []
 | hjkl | move |
 | /[PATTERN] | 搜索 |
 | ?[PATTERN] | 搜索 |
+| /\\<[PATTERN]\\> | 精确匹配搜索 |
 | % | 匹配括号移动 |
 | f | 搜索并移动到某个字符前 |
 | t | 到某个字符前的第一个字符 |
 | :N | 到第N行 |
 | gg | 到第一行 |
 | G | 到最后一行 |
-| [n] G | go to last line or line [n] |
+| [n]G | go to last line or line [n] |
 | w/W | 到下一个单词的开头 |
 | e/E | 到下一个单词的结尾 |
 | b | 到上一个单词的开头 |
@@ -66,6 +67,9 @@ projects: []
 | ^ | beginning of text on current line |
 | [CTRL] F/B| move screen |
 | [CTRL] D/U | move half screen |
+| zz | 将当前行放置于屏幕中间 |
+| zt | 将当前行放置于屏幕顶端 |
+| zb | 将当前行放置于屏幕底端 |
 
 ## Inserting text
 |   |                              |
@@ -144,7 +148,7 @@ https://github.com/junegunn/vim-plug
 
 
 ## .vimrc
-[vimrc](https://github.com/Lucas-Wye/rc/blob/master/vimrc)
+[vimrc](https://github.com/Lucas-Wye/rc/blob/master/sys/vimrc)
 
 ## [NeoVim](https://neovim.io)
 使用Vim配置文件
