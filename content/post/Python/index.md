@@ -133,7 +133,7 @@ pip install --no-index --find-links=[DIR] -r requirements.txt
 [global]
 index-url = http://mirrors.aliyun.com/pypi/simple/
 [install]
-trusted-host = mirrors.aliyun.com"
+trusted-host = mirrors.aliyun.com
 ```
 
 ## More

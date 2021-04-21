@@ -149,5 +149,14 @@ squash THIRD_COMMIT_ID add third commit
 ```
 DONE.
 
+### Git Server
+```
+sudo adduser git
+su git
+cd
+# add ssh key
+git init --bare [PROJECT_NAME].git
+```
+
 ## More
 [git教程](https://www.runoob.com/git/git-tutorial.html)  
