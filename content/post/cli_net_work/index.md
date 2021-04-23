@@ -135,10 +135,15 @@ set https_proxy="http://127.0.0.1:PORT"
 set http_proxy="http://127.0.0.1:PORT"
 ```
 
+### nmcli
+```sh
+# connect to l2tp
+nmcli con up {L2TP_VPN_NAME} --ask
+```
+
 ### Windows VPN连接
 ```
 rasdial VPN_NAME USERNAME PASSWORD
 ```
 
 ## More
-[nmcli用法](https://www.qingtingip.com/h_189554.html)
