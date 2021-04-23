@@ -84,6 +84,35 @@ c.NotebookApp.open_browser = False
 c.NotebookApp.port = 8888 # 自行指定一个端口
 ```
 
+### PyPy
+https://www.pypy.org  
+https://github.com/rvianello/conda-pypy
+
+### Cython
+https://cython.org
+
+### 镜像源
+`cat ~/.condarc`  
+```
+channels:
+ - defaults
+ - ric/channel/pypy
+
+show_channel_urls: true
+
+default_channels:
+ - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
+ - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
+ - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
+
+custom_channels:
+ conda-forge: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+ pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+
+envs_dirs:
+ - ~/pypy-envs
+```
+
 ## pip
 ```sh
 # 导入依赖包                                
@@ -97,8 +126,14 @@ pip freeze > requirements.txt
 pip download -d [DIR] -r requirements.txt 
 # 离线安装
 pip install --no-index --find-links=[DIR] -r requirements.txt  
-# 更改镜像源
-echo "[global]\nindex-url = http://mirrors.aliyun.com/pypi/simple/\n[install]\ntrusted-host = mirrors.aliyun.com" > ~/.pip/pip.conf 
+```
+### 镜像源
+`cat ~/.pip/pip.conf`  
+```
+[global]
+index-url = http://mirrors.aliyun.com/pypi/simple/
+[install]
+trusted-host = mirrors.aliyun.com
 ```
 
 ## More
