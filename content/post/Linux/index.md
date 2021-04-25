@@ -195,8 +195,15 @@ sudo umount YOUR_PATH
 cd /etc/apt/sources.list.d/ # 找到关于源的文件,删除即可
 ```
 
-## 查看中文字体
+## 字体
 ```sh
+# 安装Windows字体
+sudo cp [Windows-Fonts] /usr/share/fonts/Windows-Fonts
+sudo mkfontscale
+sudo mkfontdir
+fc-cache
+
+# 查看中文字体
 fc-list:lang=zh-cn
 ```
 
@@ -274,6 +281,18 @@ ssh HOSTNAME
 
 # SSH for data transfer
 ssh -qTfnN -D PORT SERVER 
+```
+
+## Mac OS Theme for Ubuntu
+```sh
+sudo apt install gnome-tweak-tool gnome-shell-extensions
+
+git clone --depth=1 https://github.com/vinceliuice/Sierra-gtk-theme
+cd Sierra-gtk-theme
+./install.sh
+
+git clone --depth=1 https://github.com/USBA/Cupertino-iCons
+sudo cp -r Cupertino-iCons /usr/share/icons
 ```
 
 ## More
