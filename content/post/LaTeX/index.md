@@ -68,9 +68,11 @@ sudo mkfontdir
 sudo fc-cache -f -v
 ```
 
+## Package
+- Algorithm2e
+
 ## More
 [LaTeX模板](http://github.com/Lucas-Wye/Latex_template)  
 [LaTeX开源小屋](http://latexstudio.net/)  
+[Stackexchange](https://tex.stackexchange.com/)  
 [LaTeX Introduction](https://github.com/Lucas-Wye/Share/tree/master/LaTeX)  
-[TeX Live下载及安装说明](https://liam.page/texlive/)  
-[一份其实很短的 LaTeX 入门文档](https://liam.page/2014/09/08/latex-introduction/)
