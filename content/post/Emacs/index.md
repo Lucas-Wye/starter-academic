@@ -98,5 +98,9 @@ projects: []
 | C-v o | move the cursor to the other window |
 
 
-## More
+## 配置镜像源
+[清华源](https://mirror.tuna.tsinghua.edu.cn/help/elpa/)  
 
+
+## More
+[Spacemas](https://www.spacemacs.org)
