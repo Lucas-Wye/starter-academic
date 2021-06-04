@@ -40,10 +40,17 @@ Zotero is a free, easy-to-use tool to help you collect, organize, cite, and shar
 ### [Better Bibtex](https://retorque.re/zotero-better-bibtex/)
 - [设置格式](https://retorque.re/zotero-better-bibtex/citation-keys/)
 
-`Zotero Preferences`的`Better Bibtex`的`Tab`中修改`citation key format`为
+`Zotero Preferences` -> `Better Bibtex` -> `Citation Keys`中，修改`citation key format`为
 ```
 [auth:lower][year][veryshorttitle:lower]
 ```
+
+### [ZotFile](http://zotfile.com/)
+- 修改附件的命名格式
+
+`Zotero Tools` -> `ZotFile Preferences` -> `Renaming`中，修改格式为`{%y_}{%t_}{%a}`
+
+### [Zotero Scholar Citations](https://github.com/beloglazov/zotero-scholar-citations)
 
 ## More
 [Zotero Website](https://www.zotero.org/)
