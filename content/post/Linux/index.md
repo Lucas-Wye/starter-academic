@@ -119,6 +119,8 @@ find ./ -mtime 0
 find . -name "*.c"
 # 查找当前目录符合条件的文件内容
 grep -nHR "STRING" .
+# grep不匹配二进制文件
+grep --binary-files=without-match
 ```
 
 ## process

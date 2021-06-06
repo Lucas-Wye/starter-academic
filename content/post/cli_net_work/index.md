@@ -124,6 +124,11 @@ curl -O https://www.example.com/foo/bar.html
 # 通过添加 `-C` 继续对该文件进行下载，已经下载过的文件不会被重新下载
 curl -C -O http://www.gnu.org/software/gettext/manual/gettext.html
 ```
+(9)使用wget或者curl下载github release文件
+```
+curl -LJO GITHUB_RELEASE_LINK
+wget --no-check-certificate --content-disposition GITHUB_RELEASE_LINK
+```
 
 ### terminal设置代理
 ```sh
