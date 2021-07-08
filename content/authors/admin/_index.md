@@ -1,6 +1,6 @@
 ---
 # Display name
-title: ZW YE
+title: Lucas Z.W. YE
 
 # Username (this should match the folder name)
 authors:
@@ -10,22 +10,24 @@ authors:
 superuser: true
 
 # Role/position
-role: Graduate Student
+role: Ph.D. Student
 
 # Organizations/Affiliations
 organizations:
 - name: Zhejiang University
   url: "http://www.zju.edu.cn"
+- name: City University of Hong Kong
+  url: "https://www.cityu.edu.hk"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Ph.D of ZJU, mainly working on Cryptography, Integration Circuits, Secure RISC-V Processor Design.
+bio: Ph.D. of ZJU and CityU, mainly working on Cryptographic Hardware, Hardware Security, Secure RISC-V Processor Design.
 
 interests:
 - RISC-V
-- Cryptography
 - Machine Learning
+- Hardware Security
 - Integration Circuits
-- Computer Architecture
+- Cryptographic Hardware
 
 education:
   courses:
@@ -63,4 +65,4 @@ email: "lucas.zw.ye@outlook.com"
 # - Visitors
 ---
 
-Zewen YE is currently pursuing his PhD degree at the Intelligent Security and Ubiquitous Computing Lab[(ISUC)](https://person.zju.edu.cn/huangkejie), Zhejiang University[(ZJU)](http://www.zju.edu.cn). He obtained his bachelor’s degree of Electronic Engineering at the College of Information Science & Electronic Engineering[(ISEE)](http://www.isee.zju.edu.cn/), Zhejiang University[(ZJU)](http://www.zju.edu.cn/) in 2020.
+Lucas Zewen YE is currently pursuing the joint Ph.D. degree at Intelligent Security and Ubiquitous Computing [(ISUC)](https://person.zju.edu.cn/huangkejie) Lab, Zhejiang University[(ZJU)](http://www.zju.edu.cn) and CityU Architecture Lab for Arithmetic and Security[(CALAS)](http://www4.ee.cityu.edu.hk/CALAS), City University of Hong Kong[(CityU)](https://www.cityu.edu.hk). He obtained his bachelor’s degree of Electronic Engineering at the College of Information Science & Electronic Engineering[(ISEE)](http://www.isee.zju.edu.cn/), Zhejiang University[(ZJU)](http://www.zju.edu.cn/) in 2020.

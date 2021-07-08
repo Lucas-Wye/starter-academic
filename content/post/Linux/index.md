@@ -192,6 +192,40 @@ df -h
 sudo umount YOUR_PATH 
 ```
 
+## Ubuntu开机自动挂载Windows硬盘分区
+```
+查看分区信息
+sudo fdisk -l
+查看磁盘类型
+sudo blkid
+```
+
+输出
+```
+Device         Boot     Start       End   Sectors  Size Id Type
+/dev/nvme0n1p1 *         2048   1187839   1185792  579M  7 HPFS/NTFS/exFAT
+/dev/nvme0n1p2        1187840 210903039 209715200  100G  7 HPFS/NTFS/exFAT
+/dev/nvme0n1p3      210903040 420618239 209715200  100G  7 HPFS/NTFS/exFAT
+/dev/nvme0n1p4      420620286 500117503  79497218 37.9G  5 Extended
+/dev/nvme0n1p5      420620288 421595135    974848  476M 83 Linux
+/dev/nvme0n1p6      421597184 450891775  29294592   14G 83 Linux
+/dev/nvme0n1p7      450893824 500117503  49223680 23.5G 83 Linux
+```
+
+```
+修改配置文件
+sudo vim /etc/fstab
+
+# for Windows 10 C:/
+/dev/nvme0n1p2 /home/usrname/Windows_Disks/C ntfs defaults 0 0
+
+# for Windows 10 D:/
+/dev/nvme0n1p3 /home/usrname/Windows_Disks/D ntfs defaults 0 0
+
+挂载新添加的分区
+sudo mount -a
+```
+
 ## 删除ppa源
 ```sh
 cd /etc/apt/sources.list.d/ # 找到关于源的文件,删除即可

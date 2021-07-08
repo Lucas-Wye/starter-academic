@@ -18,20 +18,12 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "Ph.D"
-  company = "[Zhejiang University](http://www.zju.edu.cn/)"
-  location = "Hangzhou, China"
+  title = "Ph.D. Student"
+  company = "[Zhejiang University](http://www.zju.edu.cn/), [City University of Hong Kong](https://www.cityu.edu.hk)"
+  location = "Hangzhou and Hong Kong, China"
   date_start = "2020-09-11"
   date_end = ""
-  description = """Research about machine learning and computer architecture, advised by [Dr. Huang](https://person.zju.edu.cn/huangkejie)."""
-
-[[experience]]
-  title = "Intern Backend Engineer"
-  company = "[Run the World, Inc.](https://www.runtheworld.today/)"
-  location = "Hangzhou, China"
-  date_start = "2019-11-09"
-  date_end = "2020-03-28"
-  description = """Use Golang to do web backend development."""
+  description = """Research about Cryptographic Hardware, Hardware Security and Secure RISC-V Processir Design, advised by [Dr. Huang](https://person.zju.edu.cn/huangkejie) and [Dr. Ray C.C. Cheung](http://www4.ee.cityu.edu.hk/CALAS/?page_id=822)."""
 
 [[experience]]
   title = "B.E."
