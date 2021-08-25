@@ -65,7 +65,7 @@ git checkout HEAD FILE_NAME
 git revert COMMIT_ID
 ```
 
-### 分支与标签
+### 分支
 ```sh
 # 查看所有远程分支
 git branch -r
@@ -73,17 +73,29 @@ git branch -r
 git branch -a
 # 查看所有本地分支
 git branch
+
 # 切换分支
-git checkout BRANCH/TAG
+git checkout BRANCH
+
 git branch NEW_BRANCH
 git branch -d BRANCH
+git branch -m OLD_NAME NEW_NAME
+
 # 拉取远程分支并创建本地分支
 # (1)使用该方式会在本地新建分支x，并自动切换到该本地分支x，采用此种方法建立的本地分支会和远程分支建立映射关系
 git checkout -b 本地分支名x origin/远程分支名x
 # (2)使用该方式会在本地新建分支x，但是不会自动切换到该本地分支x，需要手动checkout，采用此种方法建立的本地分支不会和远程分支建立映射关系
 git fetch origin 远程分支名x:本地分支名x
 
-# 标签
+# 删除远程分支(1)
+git branch -r -d origin/BRANCH_NAME
+git push origin :BRANCH_NAME
+# 删除远程分支(2)
+git push origin --delete BRANCH_NAME
+```
+
+### 标签
+```
 git tag # 列出所有的本地标签
 git tag TAG_NAME # 基于最新的提交创建标签
 git tag -d TAG_NAME

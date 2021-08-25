@@ -330,6 +330,10 @@ cd Sierra-gtk-theme
 git clone --depth=1 https://github.com/USBA/Cupertino-iCons
 sudo cp -r Cupertino-iCons /usr/share/icons
 ```
+安装完成后，打开`tweak`  
+设置`Appearance`->`Themes`->`Applications`为`Sierra-light`  
+设置`Appearance`->`Themes`->`Icons`为`Cupertino-iCons`  
+
 
 ## More
 [A good introduction to Linux](https://github.com/QSCTech/2020-Autumn-Round-Two/tree/master/problem-set-1)
